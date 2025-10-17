@@ -1,0 +1,138 @@
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.oleo-script-regular {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oleo-script-bold {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.holtwood-one-sc-regular {
+  font-family: "Holtwood One SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    background: url(img/IS.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ==================================================================== */
+
+#top{
+    width: 100vw;
+    background: #3340557a;
+}
+
+#top #home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+}
+
+#top #home h1{
+    font-size: 10vw;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000000;
+    max-width: 70%;
+}
+
+#top #top-dest{
+    width: 100%;
+    height: 650px;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+#top #top-dest h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#top #top-dest .dest-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+#top #top-dest .dest-cards .dest-card{
+    width: 300px;
+    height: 400px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    cursor: pointer;
+}
+
+/* ==================================================================== */
+
+.white{
+    background-color: white;
+}
+
+#why{
+    width: 100vw;
+    height: 500px;
+    background-color: rgb(239, 240, 242);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#why .why-title{
+    max-width: 70%;
+    text-align: center;
+}
+
+#why .why-title h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #74cc98;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+#why .why-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    flex-wrap: wrap;
+}
+
+#why .why-column{
+    width: 25%d;
+    text-align: center;
+    margin: 20px;
+}
