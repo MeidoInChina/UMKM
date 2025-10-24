@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet"> <!-- cursive -->
     <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet"> <!-- Holtwood -->
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet"> <!-- Josefin Sans -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Serompoen Group</title>
 </head>
@@ -32,13 +33,13 @@
     <!-- top -->
     <div id="top" class="top">
         <div id="home" class="home">
-            <h1 class="oleo-script-bold">Serompoen Tour & Travel</h1>
+            <h1 class="cursive-bold">Serompoen Tour & Travel</h1>
         </div>
         <!-- data -->
-        <div id="data" class="data">
+        <form id="data" class="data">
             <!-- column 1 -->
             <div class="data-column">
-                <p>Pilihan Kategori</p>
+                <p class="josefin-sans-500">Pilihan Kategori</p>
                 <select>
                     <option value="tour">Tour</option>
                     <option value="hotel">Hotel</option>
@@ -47,7 +48,7 @@
             </div>
             <!-- column 2 -->
             <div class="data-column">
-                <p>Pilihan Destinasi</p>
+                <p class="josefin-sans-500">Pilihan Destinasi</p>
                 <select>
                     <option value="tour">Tour</option>
                     <option value="hotel">Hotel</option>
@@ -56,7 +57,7 @@
             </div>
             <!-- column 3 -->
             <div class="data-column">
-                <p>Durasi</p>
+                <p class="josefin-sans-500">Durasi</p>
                 <select>
                     <option value="tour">Tour</option>
                     <option value="hotel">Hotel</option>
@@ -65,9 +66,11 @@
             </div>
             <!-- button -->
             <div class="data-column">
-                <button>Cari Tour</button>
+                <button>
+                    <span>Cari Paket</span>
+                </button>
             </div>
-        </div>
+        </form>
         <!-- end data -->
         <div id="top-dest" class="top-dest">
             <h2>Top Destinations</h2>

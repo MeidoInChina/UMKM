@@ -10,13 +10,13 @@
     width: 0;
 }
 
-.oleo-script-regular {
+.cursive-regular {
   font-family: "Oleo Script", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
-.oleo-script-bold {
+.cursive-bold {
   font-family: "Oleo Script", system-ui;
   font-weight: 700;
   font-style: normal;
@@ -25,6 +25,13 @@
 .holtwood-one-sc-regular {
   font-family: "Holtwood One SC", serif;
   font-weight: 400;
+  font-style: normal;
+}
+
+.josefin-sans-500{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -59,6 +66,58 @@ body{
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px #000000;
     max-width: 70%;
+}
+
+#data{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin: 20px 0;
+    padding: 70px 0;
+    background: #498b67;
+}
+
+#data .data-column{
+    text-align: center;
+    color: white;
+}
+
+#data .data-column p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#data .data-column select{
+    width: 150px;
+    height: 30px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+#data .data-column button{
+    width: 120px;
+    height: 35px;
+    border: none;
+    background-color: #e6e6e6;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in;
+}
+
+#data .data-column button span {
+    display: inline-block;
+}
+
+#data .data-column button:hover {
+    cursor: pointer;
+    color: #fff;
+    box-shadow: inset  150px 0 0 #37a26b;
 }
 
 #top #top-dest{
