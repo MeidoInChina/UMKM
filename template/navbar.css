@@ -2,9 +2,9 @@
 nav{
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 100px;
+    padding: 20px 20px;
+    gap: 10rem;
     position: fixed;
 }
 
@@ -15,6 +15,7 @@ nav{
 .navigation .nav-links{
     list-style: none;
     display: flex;
+    margin-left: 2.5rem;
     gap: 50px;
     align-items: center;
     text-align: center;
@@ -53,5 +54,66 @@ nav{
 .navigation .nav-links li .n1:hover::after{
     transform: scale(1);
     transform-origin: bottom-left;
+}
+
+/* DROPDOWN UTAMA */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(50,50,50,0.95);
+    padding: 10px 0;
+    min-width: 280px;
+    display: none;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+    display: flex;
+}
+
+.dropdown-menu li {
+    position: relative;
+    list-style: none;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* SUB MENU (LEVEL 2) */
+.sub-dropdown .sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: -3.3rem;
+    background: rgba(50,50,50,0.95);
+    min-width: 230px;
+    padding: 10px 0;
+    display: none;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+/* Tampilkan submenu saat hover item-nya */
+.sub-dropdown:hover .sub-menu,
+.sub-menu:hover {
+    display: flex;
+}
+
+/* Hover efek */
+.dropdown-menu li a:hover,
+.sub-menu li a:hover {
+    background: rgba(255,255,255,0.15);
+    cursor: pointer;
 }
 /* end navbar */
