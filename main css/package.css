@@ -29,7 +29,7 @@
 }
 
 body{
-    background: url(../img/ellen-joe-and-bagboo.gif);
+    background: linear-gradient(#00000057, #00000083), url(../img/ellen-joe-and-bagboo.gif);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

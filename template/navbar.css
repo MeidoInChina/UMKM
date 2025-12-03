@@ -22,9 +22,9 @@ nav{
     text-align: center;
     padding: 20px 50px;
     justify-content: space-evenly;
-    border: solid 3px #005418;
+    border: solid 3px #1f3d28;
     border-radius: 50px;
-    background-color: #454966c6;
+    background-color: #1f3d28   ;
 }
 
 .navigation .nav-links li .n1{
