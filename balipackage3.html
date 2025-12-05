@@ -24,10 +24,70 @@
         </div>
         <div class="navigation">
             <ul class="nav-links">
-                <li><a href="#" class="n1">Home</a></li>
+                <li><a href="/home.html" class="n1">Home</a></li>
                 <li><a href="#" class="n1">About us</a></li>
-                <li><a href="#" class="n1">Destinations</a></li>
+
+                <!-- Dropdown -->
+                <li class="dropdown">
+                    <a class="n1">Paket Tour Favorit</a>
+                    <ul class="dropdown-menu">
+
+                        <li class="sub-dropdown">
+                            <a href="/balipackages.html" class="sub-btn">Paket Tour Bali</a>
+
+                            <ul class="sub-menu">
+                                <li><a href="/balipackage.html">Paket 3 Hari 2 Malam</a></li>
+                                <li><a href="/balipackage2.html">Paket 4 Hari 3 Malam</a></li>
+                                <li><a href="/balipackage3.html">Paket 5 Hari 4 Malam</a></li>
+                                <li><a href="/balipackage4.html">Paket 6 Hari 5 Malam</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="sub-dropdown">
+                            <a class="sub-btn">Paket Tour Jogja</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Paket 3 Hari 2 Malam</a></li>
+                                <li><a href="#">Paket 4 Hari 3 Malam</a></li>
+                                <li><a href="#">Paket 5 Hari 4 Malam</a></li>
+                                <li><a href="#">Paket 6 Hari 5 Malam</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="sub-dropdown">
+                            <a class="sub-btn">Paket Tour Lombok</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Paket 3 Hari 2 Malam</a></li>
+                                <li><a href="#">Paket 4 Hari 3 Malam</a></li>
+                                <li><a href="#">Paket 5 Hari 4 Malam</a></li>
+                                <li><a href="#">Paket 6 Hari 5 Malam</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="sub-dropdown">
+                            <a class="sub-btn">Paket Tour Malang Batu</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Paket 3 Hari 2 Malam</a></li>
+                                <li><a href="#">Paket 4 Hari 3 Malam</a></li>
+                                <li><a href="#">Paket 5 Hari 4 Malam</a></li>
+                                <li><a href="#">Paket 6 Hari 5 Malam</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="sub-dropdown">
+                            <a class="sub-btn">Paket Tour Malang, Batu & Bromo</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Paket 3 Hari 2 Malam</a></li>
+                                <li><a href="#">Paket 4 Hari 3 Malam</a></li>
+                                <li><a href="#">Paket 5 Hari 4 Malam</a></li>
+                                <li><a href="#">Paket 6 Hari 5 Malam</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+
                 <li><a href="#" class="n1">Contact</a></li>
+            </ul>
         </div>
     </nav>
     <!-- end navbar -->
@@ -36,15 +96,15 @@
     <div class="tour-section">
     <h2 class="title oleo-script-regular">Paket Tour Terbaru Bali Top Holiday</h2>
 
-    <div class="tour-grid">
+    <div class="tngh">
 
         <!-- PAKET 1 -->
         <div class="tour-card">
             <div class="label">
-                <span class="promo">Packages For 3 Days 2 Nights</span>
+                <span class="promo">Packages For 5 Days 4 Nights</span>
                 <span class="code">PACKAGE 1</span>
             </div>
-            <img src="img/paket1.jpg" class="tour-img">
+            <img src="img/Data/BALI/bali2.jpg" class="tour-img">
 
             <div class="info">
                 <h3>BALI 1</h3>
@@ -53,40 +113,11 @@
             <div class="tap"><button><h3>Tap Here</h3></button></div>
         </div>
 
-        <!-- PAKET 2 -->
-        <div class="tour-card">
-            <div class="label">
-                <span class="promo">Packages For 3 Days 2 Nights</span>
-                <span class="code">PACKAGE 2</span>
-            </div>
-            <img src="img/paket2.jpg" class="tour-img">
-
-            <div class="info">
-                <h3>BALI 2</h3>
-                <p class="price"><small>*Mulai</small> <b>Rp 2.350.000</b> / pax</p>
-            </div>
-            <div class="tap"><button><h3>Tap Here</h3></button></div>
-        </div>
-
 
         <!-- PAKET 3 -->
-         <div class="tour-card" >
-            <div class="label">
-                <span class="promo">Packages For 3 Days 2 Nights</span>
-                <span class="code">PACKAGE 3</span>
-            </div>
-            <img src="img/paket3.jpg" class="tour-img">
-
-            <div class="info">
-                <h3>BALI 3</h3>
-                <p class="price"><small>*Mulai</small> <b>Rp 1.500.000</b> / pax</p>
-            </div>
-            <div class="tap"><button><h3>Tap Here</h3></button></div>
         
-        </div>
 
     </div>
-        
 </div>
 
     <!-- end packages -->
@@ -132,7 +163,7 @@
         // Data: HTML content for each package (BALI 1 implemented)
         const packageDetails = {
             "BALI 1": {
-                title: "BALI 1 — 3 Days / 2 Nights",
+                title: "BALI 1 — 5 Days / 4 Nights",
                 html: `
                 <div class="popup-inner">
                   <div class="price-and-include">
@@ -142,17 +173,17 @@
                         <thead>
                           <tr>
                             <th>Hotel</th>
-                            <th>Grand Zuri Kuta</th>
+                            <th>Grand Zuri</th>
                             <th>The One Legian</th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr><td>2 Pax/Org</td><td>Rp2.205.000</td><td>Rp2.205.000</td></tr>
-                          <tr><td>4 Pax/Org</td><td>Rp2.180.000</td><td>Rp2.180.000</td></tr>
-                          <tr><td>6 Pax/Org</td><td>Rp2.130.000</td><td>Rp2.130.000</td></tr>
-                          <tr><td>8 Pax/Org</td><td>Rp2.325.000</td><td>Rp2.325.000</td></tr>
-                          <tr><td>10 Pax/Org</td><td>Rp1.870.000</td><td>Rp1.870.000</td></tr>
-                          <tr><td>20 Pax/Org</td><td>Rp1.780.000</td><td>Rp1.780.000</td></tr>
+                          <tr><td>2 Pax / Org</td><td>Rp3.945.000</td><td>Rp4.235.000</td></tr>
+                          <tr><td>4 Pax / Org</td><td>Rp3.885.000</td><td>Rp4.000.000</td></tr>
+                          <tr><td>6 Pax / Org</td><td>Rp3.820.000</td><td>Rp4.110.000</td></tr>
+                          <tr><td>8 Pax / Org</td><td>Rp3.500.000</td><td>Rp3.850.000</td></tr>
+                          <tr><td>10 Pax / Org</td><td>Rp3.360.000</td><td>Rp3.650.000</td></tr>
+                          <tr><td>20 Pax / Org</td><td>Rp2.920.000</td><td>Rp3.140.000</td></tr>
                         </tbody>
                       </table>
                     </div>
@@ -187,31 +218,57 @@
                           <h5>Day 1</h5>
                           <ul>
                             <li>Jemputan di Bandara Bali</li>
-                            <li>CheckIn</li>
-                            <li>Discovery</li>
-                            <li>Makan Malam</li>
-                            <li>Kembali Ke hotel</li>
+                            <li>Check In ke hotel</li>
+                            <li>Jimbaran</li>
+                            <li>Makan Malam di Jimbaran</li>
+                            <li>Kembali ke hotel</li>
                           </ul>
                         </div>
+
                         <div class="day">
                           <h5>Day 2</h5>
                           <ul>
                             <li>Desa Panglipuran</li>
-                            <li>Kintamani Penelokan</li>
-                            <li>Makan Siang at Kintamani</li>
-                            <li>Tirta Empul</li>
-                            <li>Ubud Palace</li>
-                            <li>Makan Malam at Denpasar</li>
-                            <li>Kembali ke Hotel</li>
+                            <li>Kintamani (Penelokan)</li>
+                            <li>Makan Siang di Kintamani</li>
+                            <li>Oka Agrowisata Luwak</li>
+                            <li>Pura Tirta Empul</li>
+                            <li>Makan Malam di Denpasar</li>
+                            <li>Kembali ke hotel</li>
                           </ul>
                         </div>
+
                         <div class="day">
                           <h5>Day 3</h5>
                           <ul>
-                            <li>Checkout</li>
+                            <li>Pura Ulun Danu (Bedugul)</li>
+                            <li>Makan Siang di Bedugul</li>
+                            <li>Jungle Gold Chocolate Factory</li>
+                            <li>Pura Tanah Lot</li>
+                            <li>Makan Malam di Denpasar</li>
+                            <li>Kembali ke hotel</li>
+                          </ul>
+                        </div>
+
+                        <div class="day">
+                          <h5>Day 4</h5>
+                          <ul>
+                            <li>Tanjung Benoa (water sport optional)</li>
+                            <li>Makan Siang</li>
+                            <li>Pantai Melasti / Pantai Pandawa</li>
+                            <li>Pura Uluwatu</li>
+                            <li>Makan Malam di Jimbaran</li>
+                            <li>Kembali ke hotel</li>
+                          </ul>
+                        </div>
+
+                        <div class="day">
+                          <h5>Day 5</h5>
+                          <ul>
+                            <li>Check Out</li>
                             <li>Pusat Oleh-Oleh</li>
-                            <li>Makan Siang at Kuta</li>
-                            <li>Kembali</li>
+                            <li>Makan Siang di Kuta</li>
+                            <li>Transfer ke Bandara / Selesai</li>
                           </ul>
                         </div>
                       </div>
