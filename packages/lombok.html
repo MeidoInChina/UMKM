@@ -94,7 +94,7 @@
             <img src="../img/Data/LOMBOK/lombok1.jpg" class="tour-img">
 
             <div class="info">
-                <h3>Lombok 1</h3>
+                <h3>LOMBOK 1</h3>
                 <p class="price"><small>*Mulai</small> <b>Rp 1.850.000</b> / pax</p>
             </div>
             <div class="tap"><button><h3>Tap Here</h3></button></div>
@@ -147,295 +147,153 @@
 
         // Data: HTML content for each package (BALI 1 implemented)
         const packageDetails = {
-            "BALI 1": {
-                title: "BALI 1 — 6 Days / 5 Nights",
-                html: `
-                <div class="popup-inner">
-                  <div class="price-and-include">
-                    <div class="price-list">
-                      <h4>PRICE LIST</h4>
-                      <table class="price-table">
-                        <thead>
-                          <tr>
-                            <th>Hotel</th>
-                            <th>Grand Zuri</th>
-                            <th>The One Legian</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr><td>2 Pax / Org</td><td>Rp3.905.000</td><td>Rp3.805.000</td></tr>
-                          <tr><td>4 Pax / Org</td><td>Rp3.750.000</td><td>Rp3.650.000</td></tr>
-                          <tr><td>6 Pax / Org</td><td>Rp3.615.000</td><td>Rp3.515.000</td></tr>
-                          <tr><td>8 Pax / Org</td><td>Rp3.550.000</td><td>Rp3.450.000</td></tr>
-                          <tr><td>10 Pax / Org</td><td>Rp3.405.000</td><td>Rp3.305.000</td></tr>
-                          <tr><td>20 Pax / Org</td><td>Rp3.320.000</td><td>Rp3.215.000</td></tr>
-                        </tbody>
-                      </table>
-                    </div>
+"LOMBOK 1": {
+  title: "LOMBOK 1 — 5 Days / 4 Nights",
+  html: `
+  <div class="popup-inner">
+    <div class="price-and-include">
+      <div class="price-list">
 
-                    <div class="inclusions">
-                      <h4>Inclusion</h4>
-                      <ul>
-                        <li>Hotel bintang 3/4 + Sarapan (sesuai pilihan).</li>
-                        <li>Transportasi mobil/minibus/bus + Supir + BBM + Parkir/Tol.</li>
-                        <li>Penjemputan & pengantaran ke bandara.</li>
-                        <li>Tour sesuai itinerary.</li>
-                        <li>1 botol air mineral setiap hari.</li>
-                        <li>Tiket masuk objek wisata sesuai itinerary.</li>
-                      </ul>
+        <h4>HARGA PER ORANG</h4>
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Jumlah Peserta</th>
+              <th>Tanpa Hotel</th>
+              <th>Hotel ★ 2</th>
+              <th>Hotel ★ 3</th>
+              <th>Hotel ★ 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2</td><td>Rp 3.900.000</td><td>Rp 4.700.000</td><td>Rp 4.900.000</td><td>Rp 5.300.000</td></tr>
+            <tr><td>3</td><td>Rp 3.250.000</td><td>Rp 4.050.000</td><td>Rp 4.250.000</td><td>Rp 4.650.000</td></tr>
+            <tr><td>4</td><td>Rp 2.700.000</td><td>Rp 3.500.000</td><td>Rp 3.700.000</td><td>Rp 4.100.000</td></tr>
+            <tr><td>5</td><td>Rp 2.500.000</td><td>Rp 3.300.000</td><td>Rp 3.500.000</td><td>Rp 3.900.000</td></tr>
+            <tr><td>6 - 8</td><td>Rp 2.350.000</td><td>Rp 3.150.000</td><td>Rp 3.350.000</td><td>Rp 3.750.000</td></tr>
+            <tr><td>9 - 11</td><td>Rp 2.250.000</td><td>Rp 3.050.000</td><td>Rp 3.250.000</td><td>Rp 3.650.000</td></tr>
+            <tr><td>12 - 15</td><td>Rp 1.850.000</td><td>Rp 2.650.000</td><td>Rp 2.850.000</td><td>Rp 3.250.000</td></tr>
+          </tbody>
+        </table>
 
-                      <h4>Exclude</h4>
-                      <ul>
-                        <li>Tiket pesawat (dapat dibantu booking).</li>
-                        <li>Obat-obatan dan asuransi perjalanan.</li>
-                        <li>Keperluan pribadi diluar "Inclusion".</li>
-                        <li>Tips untuk supir/guide.</li>
-                      </ul>
-                    </div>
-                  </div>
+      </div>
 
-                  <div class="itinerary">
-                    <button class="itinerary-toggle" aria-expanded="false">ITINERARY</button>
-                    <div class="itinerary-body">
-                      <h4>ITINERARY</h4>
-                      <div class="itinerary-grid">
-                        <div class="day">
-                          <h5>Day 1</h5>
-                          <ul>
-                            <li>Arrival — Jemputan di Bandara Ngurah Rai</li>
-                            <li>Transfer & Check-in hotel</li>
-                            <li>Santai / Free time di Kuta atau Jimbaran</li>
-                            <li>Makan malam di Jimbaran (opsional)</li>
-                          </ul>
-                        </div>
+      <div class="inclusions" style="margin-left:20px;">
 
-                        <div class="day">
-                          <h5>Day 2</h5>
-                          <ul>
-                            <li>Bedugul — Pura Ulun Danu Beratan</li>
-                            <li>Kebun Raya Bedugul / The Blooms Garden</li>
-                            <li>Makan siang di Bedugul</li>
-                            <li>Pura Tanah Lot (sunset jika memungkinkan)</li>
-                            <li>Kembali ke hotel</li>
-                          </ul>
-                        </div>
+        <h4>PAKET SUDAH TERMASUK</h4>
+        <ul>
+          <li>Transportasi Selama Tour Berlangsung</li>
+          <li>Retribusi Parkir</li>
+          <li>Hotel selama 4 malam</li>
+          <li>Makan pagi 4x</li>
+          <li>Makan siang 5x</li>
+          <li>Makan malam 4x</li>
+          <li>Air Mineral</li>
+          <li>Speedboat private</li>
+          <li>Tiket Masuk Wisata</li>
+          <li>Selempang penyambutan kain tenun Lombok</li>
+          <li>Pemandu Wisata</li>
+          <li>Dokumentasi Foto</li>
+          <li>Asuransi Perjalanan Wisata</li>
+        </ul>
 
-                        <div class="day">
-                          <h5>Day 3</h5>
-                          <ul>
-                            <li>Desa Panglipuran (desa tradisional)</li>
-                            <li>Kintamani — Penelokan & Danau Batur</li>
-                            <li>Makan siang dengan pemandangan Kintamani</li>
-                            <li>Tirta Empul / Oka Agrowisata Luwak (opsional)</li>
-                            <li>Kembali ke hotel</li>
-                          </ul>
-                        </div>
+        <h4>PAKET TIDAK TERMASUK</h4>
+        <ul>
+          <li>Tiket pesawat PP</li>
+          <li>Keperluan Pribadi di luar Fasilitas</li>
+          <li>Tipping</li>
+          <li>Sepeda keliling Gili Trawangan</li>
+          <li>Snorkling di Gili</li>
+        </ul>
 
-                        <div class="day">
-                          <h5>Day 4</h5>
-                          <ul>
-                            <li>Tanjung Benoa — water sport (opsional)</li>
-                            <li>Pantai Pandawa atau Pantai Melasti</li>
-                            <li>Makan siang area Uluwatu</li>
-                            <li>Pura Uluwatu — sunset & Kecak (opsional malam)</li>
-                            <li>Kembali ke hotel</li>
-                          </ul>
-                        </div>
+      </div>
+    </div>
 
-                        <div class="day">
-                          <h5>Day 5</h5>
-                          <ul>
-                            <li>Ubud — Monkey Forest & Ubud Palace</li>
-                            <li>Pasar Seni Ubud / Pusat Oleh-Oleh</li>
-                            <li>Makan siang di Ubud</li>
-                            <li>Sore: spa / aktivitas bebas</li>
-                          </ul>
-                        </div>
+    <div class="itinerary">
+      <button class="itinerary-toggle" aria-expanded="false">ITINERARY</button>
+      <div class="itinerary-body">
+        <h4>ITINERARY</h4>
+        <div class="itinerary-grid">
 
-                        <div class="day">
-                          <h5>Day 6</h5>
-                          <ul>
-                            <li>Check-out dari hotel</li>
-                            <li>Singgah pusat oleh-oleh jika waktu memungkinkan</li>
-                            <li>Transfer ke Bandara Ngurah Rai — Selesai</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>`
-            },
-            "BALI 2": {
-                title: "BALI 2 — 3 Days / 2 Nights",
-                html: `
-                <div class="popup-inner">
-                  <div class="price-and-include">
-                    <div class="price-list">
-                      <h4>PRICE LIST</h4>
-                      <table class="price-table">
-                        <thead>
-                          <tr>
-                            <th>Hotel</th>
-                            <th>Grand Zuri Kuta</th>
-                            <th>The One Legian</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr><td>2 Pax/Org</td><td>Rp2.350.000</td><td>Rp2.275.000</td></tr>
-                          <tr><td>4 Pax/Org</td><td>Rp2.300.000</td><td>Rp2.250.000</td></tr>
-                          <tr><td>6 Pax/Org</td><td>Rp2.240.000</td><td>Rp2.200.000</td></tr>
-                          <tr><td>8 Pax/Org</td><td>Rp2.100.000</td><td>Rp2.050.000</td></tr>
-                          <tr><td>10 Pax/Org</td><td>Rp1.975.000</td><td>Rp1.975.000</td></tr>
-                          <tr><td>20 Pax/Org</td><td>Rp1.890.000</td><td>Rp1.890.000</td></tr>
-                        </tbody>
-                      </table>
-                    </div>
+          <!-- Day 1 -->
+          <div class="day">
+            <h5>Hari Pertama</h5>
+            <ul>
+              <li>08.00 – 09.00 Penjemputan di Bandara Lombok</li>
+              <li>Klaim bagasi</li>
+              <li>Explore Desa Adat Sade & Sukarare</li>
+              <li>Explore Pantai Kuta</li>
+              <li>09.00 – 18.00 Makan siang di lokal resto</li>
+              <li>Pantai Tanjung Ann</li>
+              <li>Bukit Merese</li>
+              <li>Sirkuit Mandalika</li>
+              <li>18.00 – 20.00 Menuju local resto dan makan malam</li>
+              <li>20.00 – 20.30 Menuju hotel</li>
+              <li>20.30 – 06.00 Check in dan istirahat</li>
+            </ul>
+          </div>
 
-                    <div class="inclusions">
-                      <h4>include</h4>
-                      <ul>
-                        <li>Hotel bintang 3/4 + Sarapan (Sesuai pilihan).</li>
-                        <li>Transportasi mobil/minibus/bus + Supir + BBM + Parkir/Tol.</li>
-                        <li>Penjemputan & pengantaran ke bandara.</li>
-                        <li>Tour sesuai itinerary.</li>
-                        <li>1 Botol air mineral setiap hari.</li>
-                        <li>Tiket masuk wisata.</li>
-                      </ul>
+          <!-- Day 2 -->
+          <div class="day">
+            <h5>Hari Kedua</h5>
+            <ul>
+              <li>06.00 – 08.00 Sarapan & persiapan tour</li>
+              <li>Pergi ke tempat wisata</li>
+              <li>08.00 – 17.00 Gili Trawangan, makan siang, Bukit Malimbu</li>
+              <li>Free activity di Gili Trawangan (cidomo, sepeda, snorkling opsional)</li>
+              <li>17.00 – 20.00 Menuju Kota Mataram</li>
+              <li>Makan malam</li>
+              <li>20.00 – 06.00 Menuju hotel & istirahat</li>
+            </ul>
+          </div>
 
-                      <h4>Exclude</h4>
-                      <ul>
-                        <li>Tiket pesawat (Dapat dibantu booking).</li>
-                        <li>Obat-obatan.</li>
-                        <li>Keperluan pribadi diluar "Inclusion".</li>
-                        <li>Tips untuk supir/guide.</li>
-                      </ul>
-                    </div>
-                  </div>
+          <!-- Day 3 -->
+          <div class="day">
+            <h5>Hari Ketiga</h5>
+            <ul>
+              <li>06.00 – 08.00 Sarapan & persiapan tour</li>
+              <li>Air Terjun Sendang Gile</li>
+              <li>Air Terjun Tiu Kelep</li>
+              <li>08.00 – 18.00 Masjid Kuno Bayan (opsional)</li>
+              <li>Belanja oleh-oleh</li>
+              <li>Makan malam</li>
+              <li>19.00 – 06.00 Kembali ke hotel & istirahat</li>
+            </ul>
+          </div>
 
-                  <div class="itinerary">
-                    <button class="itinerary-toggle" aria-expanded="false">ITINERARY</button>
-                    <div class="itinerary-body">
-                      <h4>ITINERARY</h4>
-                      <div class="itinerary-grid">
-                        <div class="day">
-                          <h5>Day 1</h5>
-                          <ul>
-                            <li>Jemputan di Bandara Bali</li>
-                            <li>CheckIn</li>
-                            <li>Discovery</li>
-                            <li>Makan Malam</li>
-                            <li>Kembali Ke hotel</li>
-                          </ul>
-                        </div>
-                        <div class="day">
-                          <h5>Day 2</h5>
-                          <ul>
-                            <li>Tanjung Benoa (water sport optional)</li>
-                            <li>Makan Siang</li>
-                            <li>Tebing Tanah Lot / Tebing Tanah Barak</li>
-                            <li>Pantai Pandawa</li>
-                            <li>Makan Malam di Denpasar</li>
-                            <li>Kembali ke Hotel</li>
-                          </ul>
-                        </div>
-                        <div class="day">
-                          <h5>Day 3</h5>
-                          <ul>
-                            <li>Checkout</li>
-                            <li>Pusat Oleh-Oleh</li>
-                            <li>Makan Siang at Kuta</li>
-                            <li>Transfer ke Bandara / Selesai</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>`
-            },
-            "BALI 3": {
-                title: "BALI 3 — 3 Days / 2 Nights",
-                html: `
-                <div class="popup-inner">
-                  <div class="price-and-include">
-                    <div class="price-list">
-                      <h4>PRICE LIST</h4>
-                      <table class="price-table">
-                        <thead>
-                          <tr>
-                            <th>Hotel</th>
-                            <th>The One Legian</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr><td>4 Pax/Org</td><td>Rp1.500.000</td></tr>
-                          <tr><td>5 Pax/Org</td><td>Rp1.350.000</td></tr>
-                        </tbody>
-                      </table>
-                      <p style="color:#c33;margin-top:8px;font-size:13px;">*minimal 4 orang</p>
-                    </div>
+          <!-- Day 4 -->
+          <div class="day">
+            <h5>Hari Keempat</h5>
+            <ul>
+              <li>06.00 – 08.00 Sarapan & persiapan tour</li>
+              <li>08.00 – 17.00 Gili Nanggu, Gili Sudak, makan siang, Gili Kedis (Opsi 1)</li>
+              <li>Atau Pulau Pasir, Pantai Pink, makan siang, Gili Petelu (Opsi 2)</li>
+              <li>17.00 – 19.00 Makan malam</li>
+              <li>19.00 – 06.00 Kembali ke hotel & istirahat</li>
+            </ul>
+          </div>
 
-                    <div class="inclusions">
-                      <h4>include</h4>
-                      <ul>
-                        <li>Hotel bintang 3/4 + Sarapan (Sesuai pilihan).</li>
-                        <li>Transportasi mobil/minibus/bus + Supir + BBM + Parkir/Tol.</li>
-                        <li>Penjemputan & pengantaran ke bandara.</li>
-                        <li>Tour sesuai itinerary.</li>
-                        <li>1 Botol air mineral setiap hari.</li>
-                        <li>Tiket masuk wisata.</li>
-                      </ul>
+          <!-- Day 5 -->
+          <div class="day">
+            <h5>Hari Kelima</h5>
+            <ul>
+              <li>06.00 – 09.00 Sarapan dan check out</li>
+              <li>City Tour & Belanja Oleh-oleh</li>
+              <li>Islamic Centre</li>
+              <li>Pura Lingsar</li>
+              <li>09.00 – 15.00 Makan siang</li>
+              <li>Menuju Bandara Lombok</li>
+              <li>Program Trip Selesai</li>
+            </ul>
+          </div>
 
-                      <h4>Exclude</h4>
-                      <ul>
-                        <li>Tiket pesawat (Dapat dibantu booking).</li>
-                        <li>Obat-obatan.</li>
-                        <li>Keperluan pribadi diluar "Inclusion".</li>
-                        <li>Tips untuk supir/guide.</li>
-                      </ul>
-                    </div>
-                  </div>
+        </div>
+      </div>
+    </div>
 
-                  <div class="itinerary">
-                    <button class="itinerary-toggle" aria-expanded="false">ITINERARY</button>
-                    <div class="itinerary-body">
-                      <h4>ITINERARY</h4>
-                      <div class="itinerary-grid">
-                        <div class="day">
-                          <h5>Day 1</h5>
-                          <ul>
-                            <li>Jemputan di Bandara Bali</li>
-                            <li>CheckIn</li>
-                            <li>Discovery</li>
-                            <li>Makan Malam</li>
-                            <li>Kembali Ke hotel</li>
-                          </ul>
-                        </div>
-
-                        <div class="day">
-                          <h5>Day 2 (Opsi 1)</h5>
-                          <ul>
-                            <li>Desa Panglipuran</li>
-                            <li>Kintamani Penelokan</li>
-                            <li>Oka Agrowisata Luwak</li>
-                            <li>Pura Tirta Empul</li>
-                          </ul>
-                        </div>
-
-                        <div class="day">
-                          <h5>Day 2 (Opsi 2)</h5>
-                          <ul>
-                            <li>Tanjung Benoa (Bayar Sendiri / Water-sport)</li>
-                            <li>Pantai Pandawa</li>
-                            <li>Pantai Melasti</li>
-                            <li>Pura Uluwatu</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>`
-            }
-        };
+  </div>
+  `
+            }};
 
         // Attach click handlers
         document.querySelectorAll('.tap button').forEach(button => {
