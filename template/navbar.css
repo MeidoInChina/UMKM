@@ -16,7 +16,9 @@ nav{
 .navigation .nav-links{
     list-style: none;
     display: flex;
-    margin-left: 2.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     gap: 50px;
     align-items: center;
     text-align: center;
