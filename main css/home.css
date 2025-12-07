@@ -130,7 +130,7 @@ body{
 
 #why{
     width: 100vw;
-    height: 500px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -540,99 +540,335 @@ body{
 }
 
 @media (max-width: 768px) {
+    #top #home h1 {
+        font-size: 6vw;
+        max-width: 90%;
+    }
+
+    .search-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 25px 15px;
+        border-radius: 15px;
+    }
+
+    .search-button {
+        grid-column: 1;
+        margin-top: 10px;
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    #why {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    #why .why-title {
+        max-width: 95%;
+    }
+
+    #why .why-title h1 {
+        font-size: 26px;
+    }
+
+    .package h1 {
+        font-size: 2rem;
+    }
+
+    .top-packages {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .carousel-slide {
         flex: 0 0 100%;
     }
-    
-    .card {
-        height: 450px;
-    }
-    
-    .carousel-nav {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-    }
-    
+
     .carousel-container {
-        padding: 0 30px;
-    }
-    
-    .modal-content {
-        padding: 20px;
-        margin: 20px auto;
-    }
-    
-    .modal-title h2 {
-        font-size: 1.8rem;
-    }
-    
-    .detail-item {
-        flex: 1 0 100%;
-    }
-    
-    .contact-buttons {
-        flex-direction: column;
+        padding: 0 20px;
     }
 }
 
 @media (max-width: 480px) {
-    
-    .carousel-container {
-        padding: 0 25px;
+    #top {
+        padding-top: 60px;
     }
-    
-    .carousel-slide {
-        padding: 0 5px;
+
+    #top #home h1 {
+        font-size: 5vw;
+        margin-bottom: 15px;
     }
-    
-    .modal-content {
-        padding: 15px;
+
+    .search-container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 20px 12px;
     }
-    
-    .modal-title h2 {
+
+    .search-label {
+        font-size: 14px;
+    }
+
+    .search-select,
+    .search-button {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    .search-button {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #why {
+        padding: 30px 15px;
+    }
+
+    #why .why-title h1 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    #why .why-title p {
+        font-size: 14px;
+    }
+
+    .package {
+        padding: 40px 15px;
+    }
+
+    .package h1 {
         font-size: 1.5rem;
+        margin-bottom: 30px;
     }
-    
-    .modal-body h3 {
-        font-size: 1.3rem;
+
+    .top-packages {
+        gap: 15px;
+        margin-top: 20px;
     }
-    
-    .modal-subtitle {
-        font-size: 1rem;
+
+    .top-packages a {
+        width: 100% !important;
     }
-    
-    .social-icon {
-        width: 45px;
-        height: 45px;
-        font-size:1.3rem;
+
+    .top-packages a div:first-child {
+        height: 150px;
     }
 }
 
-.tap-here {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+/* ============================================ */
+/*     MODERN SEARCH BAR STYLING               */
+/* ============================================ */
+
+.search-container {
     width: 100%;
-    background: #74cc98;
-    color: #fff;
-    text-transform: uppercase;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    background: linear-gradient(135deg, #5a8f6f 0%, #4a7c5d 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    align-items: end;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.search-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-label {
+    color: white;
+    font-size: 16px;
     font-weight: 600;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    text-align: center;
-    padding: 10px 0;
-    border-top: 2px solid rgba(255,255,255,0.3);
-    border-radius: 0 0 10px 10px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.search-select {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #2d4739;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
-    opacity: 0.9;
-    z-index: 2;
+    outline: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%232d4739' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 40px;
 }
 
-.tap-here:hover {
-    background: #74cc98;
-    opacity: 1;
+.search-select:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
 }
 
-/* end package */
+.search-select:focus {
+    border-color: #74cc98;
+    box-shadow: 0 0 0 4px rgba(116, 204, 152, 0.2);
+    transform: translateY(-2px);
+}
+
+.search-select option {
+    padding: 12px;
+    background: white;
+    color: #2d4739;
+    font-weight: 500;
+}
+
+.search-select option:hover {
+    background: #f0f7f4;
+}
+
+.search-button {
+    width: 100%;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2d4739;
+    background: linear-gradient(135deg, #ffffff 0%, #e8f5e9 100%);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.search-button i {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.search-button:hover {
+    background: linear-gradient(135deg, #74cc98 0%, #5ab881 100%);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.search-button:hover i {
+    transform: scale(1.2) rotate(15deg);
+}
+
+.search-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================ */
+/*     RESPONSIVE DESIGN                       */
+/* ============================================ */
+
+@media (max-width: 1024px) {
+    .search-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 35px 25px;
+    }
+    
+    .search-button {
+        grid-column: 1 / -1;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .search-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 30px 20px;
+        border-radius: 15px;
+    }
+    
+    .search-label {
+        font-size: 15px;
+    }
+    
+    .search-select {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+    
+    .search-button {
+        padding: 15px 20px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+}
+
+/* ============================================ */
+/*     ANIMATION EFFECTS                       */
+/* ============================================ */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.search-container {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.search-column {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.search-column:nth-child(1) { animation-delay: 0.1s; }
+.search-column:nth-child(2) { animation-delay: 0.2s; }
+.search-column:nth-child(3) { animation-delay: 0.3s; }
+.search-column:nth-child(4) { animation-delay: 0.4s; }
+
+/* ============================================ */
+/*     CUSTOM SCROLLBAR FOR SELECT DROPDOWN    */
+/* ============================================ */
+
+.search-select::-webkit-scrollbar {
+    width: 8px;
+}
+
+.search-select::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.search-select::-webkit-scrollbar-thumb {
+    background: #5a8f6f;
+    border-radius: 10px;
+}
+
+.search-select::-webkit-scrollbar-thumb:hover {
+    background: #4a7c5d;
+}
+
+
+/* ini whatsapp */

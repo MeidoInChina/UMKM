@@ -413,3 +413,197 @@ body{
     .price-and-include { flex-direction: column; }
     .itinerary-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================ */
+/*     MOBILE RESPONSIVE                       */
+/* ============================================ */
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px;
+        margin-top: 100px;
+    }
+
+    .tour-section {
+        padding-top: 60px;
+    }
+
+    .tour-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .tngh {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 400px;
+        padding: 0 15px;
+    }
+
+    .tour-card {
+        max-width: 100%;
+    }
+
+    .tour-img {
+        height: 200px;
+    }
+
+    .tap {
+        margin-left: 0;
+        margin-top: -3rem;
+    }
+
+    .popup-content {
+        width: 95%;
+        max-height: 85vh;
+        padding: 20px;
+    }
+
+    #popupTitle {
+        font-size: 20px;
+    }
+
+    .price-and-include {
+        flex-direction: column;
+    }
+
+    .price-list,
+    .inclusions {
+        flex: 1 1 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .itinerary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price-table {
+        font-size: 12px;
+    }
+
+    .price-table th,
+    .price-table td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 20px;
+        margin-top: 80px;
+        margin-bottom: 25px;
+    }
+
+    .tour-section {
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .tour-grid {
+        gap: 15px;
+    }
+
+    .tour-card {
+        padding-bottom: 0.5rem;
+    }
+
+    .label {
+        padding: 15px 20px;
+        font-size: 12px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .label .code {
+        width: 100%;
+        text-align: left;
+        border-radius: 0;
+    }
+
+    .tour-img {
+        height: 180px;
+    }
+
+    .info {
+        padding: 15px;
+    }
+
+    .info h3 {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    .price {
+        font-size: 12px;
+    }
+
+    .price b {
+        font-size: 16px;
+    }
+
+    .tap h3 {
+        font-size: 12px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .popup-content {
+        width: 98%;
+        padding: 15px;
+        max-height: 90vh;
+    }
+
+    .popup-content .close {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        top: 10px;
+        right: 10px;
+    }
+
+    #popupTitle {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    #popupDetail {
+        font-size: 14px;
+    }
+
+    .price-table {
+        font-size: 11px;
+    }
+
+    .price-table th,
+    .price-table td {
+        padding: 6px 4px;
+    }
+
+    .inclusions h4,
+    .price-list h4 {
+        font-size: 14px;
+    }
+
+    .inclusions ul {
+        padding-left: 16px;
+        font-size: 13px;
+    }
+
+    .itinerary-toggle {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .itinerary .day h5 {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .itinerary .day ul {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}

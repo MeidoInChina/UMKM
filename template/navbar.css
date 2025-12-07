@@ -7,6 +7,11 @@ nav{
     z-index: 1000;
     gap: 11rem;
     position: fixed;
+    top: 0;
+    left: 0;
+    /* background: rgba(31, 61, 40, 0.744); 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);  */
 }
 
 .nav-logo img{
@@ -16,9 +21,8 @@ nav{
 .navigation .nav-links{
     list-style: none;
     display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    /* position: absolute; */
+    margin-left: 2.5rem;
     gap: 50px;
     align-items: center;
     text-align: center;
@@ -26,7 +30,7 @@ nav{
     justify-content: space-evenly;
     border: solid 3px #1f3d28;
     border-radius: 50px;
-    background-color: #1f3d28   ;
+    background-color: #1f3d28;
 }
 
 .navigation .nav-links li .n1{
@@ -122,3 +126,109 @@ nav{
     cursor: pointer;
 }
 /* end navbar */
+
+/* ============================================ */
+/*     MOBILE RESPONSIVE                       */
+/* ============================================ */
+
+@media (max-width: 1024px) {
+    nav {
+        gap: 5rem;
+        padding: 15px 10px;
+    }
+
+    .nav-logo img {
+        width: 120px;
+    }
+
+    .navigation .nav-links {
+        gap: 30px;
+        padding: 15px 30px;
+        margin-left: 1rem;
+    }
+
+    .navigation .nav-links li .n1 {
+        font-size: 14px;
+    }
+
+    .dropdown-menu {
+        min-width: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .nav-logo img {
+        width: 100px;
+    }
+
+    .navigation .nav-links {
+        gap: 15px;
+        padding: 10px 15px;
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 2px solid #1f3d28;
+    }
+
+    .navigation .nav-links li .n1 {
+        font-size: 12px;
+    }
+
+    .dropdown-menu {
+        min-width: 200px;
+        top: 85%;
+    }
+
+    .sub-dropdown .sub-menu {
+        margin-top: -2.8rem;
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .nav-logo img {
+        width: 90px;
+    }
+
+    .navigation .nav-links {
+        gap: 10px;
+        padding: 8px 10px;
+        border-radius: 30px;
+        border: 2px solid #1f3d28;
+    }
+
+    .navigation .nav-links li {
+        list-style: none;
+    }
+
+    .navigation .nav-links li .n1 {
+        font-size: 11px;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 180px;
+    }
+
+    .sub-dropdown .sub-menu {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        margin-top: -2.3rem;
+        min-width: 180px;
+    }
+}
