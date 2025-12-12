@@ -18,66 +18,37 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav>
-        <div class="nav-logo">
-            <img src="../img/LogoKecil_Serompoen Groub.png">
-        </div>
-        <div class="navigation">
-            <ul class="nav-links">
-                <li><a href="/home.html" class="n1">Home</a></li>
-                <li><a href="#" class="n1">About us</a></li>
-
-                <!-- Dropdown -->
-                <li class="dropdown">
-                    <a class="n1">Paket Tour Favorit</a>
-                    <ul class="dropdown-menu">
-
-                        <li class="sub-dropdown">
-                            <a href="/balipackages.html" class="sub-btn">Paket Tour Bali</a>
-
-                            <ul class="sub-menu">
-                                <li><a href="/balipackage.html">Paket 3 Hari 2 Malam</a></li>
-                                <li><a href="/balipackage2.html">Paket 4 Hari 3 Malam</a></li>
-                                <li><a href="/balipackage3.html">Paket 5 Hari 4 Malam</a></li>
-                                <li><a href="/balipackage4.html">Paket 6 Hari 5 Malam</a></li>
-                            </ul>
-                        </li>
-
-                         <li class="sub-dropdown">
-                            <a href="/packages/jogja.html" class="sub-btn">Paket Tour Jogja</a>
-                        </li>
-                        
-                        <li class="sub-dropdown">
-                            <a href="/packages/lombok.html" class="sub-btn">Paket Tour Lombok</a>
-                        </li>
-
-                        <li class="sub-dropdown">
-                            <a class="sub-btn">Paket Tour Malang Batu</a>
-                            <ul class="sub-menu">
-                                <li><a href="#">Paket 3 Hari 2 Malam</a></li>
-                                <li><a href="#">Paket 4 Hari 3 Malam</a></li>
-                                <li><a href="#">Paket 5 Hari 4 Malam</a></li>
-                                <li><a href="#">Paket 6 Hari 5 Malam</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="sub-dropdown">
-                            <a class="sub-btn">Paket Tour Malang, Batu & Bromo</a>
-                            <ul class="sub-menu">
-                                <li><a href="#">Paket 3 Hari 2 Malam</a></li>
-                                <li><a href="#">Paket 4 Hari 3 Malam</a></li>
-                                <li><a href="#">Paket 5 Hari 4 Malam</a></li>
-                                <li><a href="#">Paket 6 Hari 5 Malam</a></li>
-                            </ul>
-                        </li>
-
-                    </ul>
-                </li>
-
-                <li><a href="#" class="n1">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav>
+		<div class="nav-logo">
+			<img src="/img/LogoKecil_Serompoen Groub.png" alt="logo">
+		</div>
+		<div class="navigation">
+			<ul class="nav-links">
+				<li><a href="/home.html" class="n1">Home</a></li>
+				<li><a href="/home.html#why" class="n1">About us</a></li>
+				<li class="dropdown">
+					<a class="n1">Paket Tour Favorit</a>
+					<ul class="dropdown-menu">
+						<li class="sub-dropdown">
+							<a href="/balipackages.html" class="sub-btn">Paket Tour Bali</a>
+							<ul class="sub-menu">
+								<li><a href="/balipackage.html">Paket 3 Hari 2 Malam</a></li>
+								<li><a href="/balipackage2.html">Paket 4 Hari 3 Malam</a></li>
+								<li><a href="/balipackage3.html">Paket 5 Hari 4 Malam</a></li>
+								<li><a href="/balipackage4.html">Paket 6 Hari 5 Malam</a></li>
+							</ul>
+						</li>
+						<li class="sub-dropdown"><a href="/packages/jogja.html" class="sub-btn">Paket Tour Jogja</a></li>
+						<li class="sub-dropdown"><a href="/packages/lombok.html" class="sub-btn">Paket Tour Lombok</a></li>
+						<li class="sub-dropdown"><a href="/packages/malang_batu.html" class="sub-btn">Paket Tour Malang Batu</a></li>
+                        <li><a href="/packages/malang_batu_bromo.html">Paket Malang, Batu & Bromo</a></li>
+						
+					</ul>
+				</li>
+				<li><a href="https://wa.me/6281258866798" target="_blank" rel="noopener noreferrer" class="n1">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
     <!-- end navbar -->
 
     <!-- packages -->
@@ -311,9 +282,17 @@
                     popupDetailEl.textContent = 'Detail tidak tersedia untuk paket ini.';
                 }
 
-                // initialize itinerary toggle(s) after content injected
-                initItineraryToggles();
+                // add small whatsapp button into popup
+                const waText = encodeURIComponent('Halo Serompoen Tour, saya ingin memesan paket: ' + (data && data.title ? data.title : packageName));
+                const waBtn = document.createElement('a');
+                waBtn.className = 'popup-wa-btn';
+                waBtn.href = 'https://wa.me/6281258866798?text=' + waText;
+                waBtn.target = '_blank';
+                waBtn.rel = 'noopener noreferrer';
+                waBtn.innerHTML = '<i class="fa-brands fa-whatsapp"></i> Chat';
+                popupDetailEl.appendChild(waBtn);
 
+                initItineraryToggles();
                 popup.classList.add('show');
             });
         });
@@ -366,5 +345,10 @@
             }
         });
     </script>
+
+    <!-- Floating WhatsApp button -->
+    <a class="wa-fab" href="https://wa.me/6281258866798?text=Halo%20Serompoen%20Tour%2C%20saya%20ingin%20informasi%20(Lombok%20Packages)" target="_blank" rel="noopener noreferrer" aria-label="Chat via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 </body>
 </html>

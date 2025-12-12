@@ -74,7 +74,7 @@ a{
 }
 
 .package-card:hover{
-    box-shadow: 5px 5px #00000070;
+    box-shadow: 10px 10px #00000070;
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
