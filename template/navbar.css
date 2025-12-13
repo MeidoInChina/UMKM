@@ -21,7 +21,11 @@ nav{
 .navigation .nav-links{
     list-style: none;
     display: flex;
-    /* position: absolute; */
+    /* the center stuff */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* the rest */
     margin-left: 2.5rem;
     gap: 50px;
     align-items: center;
